@@ -1,0 +1,7 @@
+.product {
+    max-width: 33%;
+    min-height: 20rem;
+    .product-description {
+        -webkit-line-clamp: 2;
+    }
+}

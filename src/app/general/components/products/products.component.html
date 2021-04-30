@@ -1,0 +1,24 @@
+<div class="container row">
+    <div class="card product" *ngFor="let product of product_list">
+        <img  src="{{product.productImage}}" *ngIf="product.productImage">
+        <img  src="/assets/images/SD-default-image.png" *ngIf="!product.productImage">
+        <div class="card-body">
+            <h1 class="card-title text-capitalize">{{product.product_name}}</h1>
+            <div class="d-flex card-text justify-content-between">
+                <p class="fw-bold">Product code:</p>
+                <p class="">{{product.code}}</p>
+            </div>
+            <div class="d-flex card-text justify-content-between">
+                <p class="product-description">{{product.description}}</p>
+            </div>
+            <div class="d-flex card-text justify-content-between">
+                <p class="fw-bold">Quantity:</p>
+                <p class="">{{product.quantity}}</p>
+            </div>
+            <div class="d-flex card-text justify-content-between">
+                <p class="fw-bold">Price:</p>
+                <p class="">{{product.price}}</p>
+            </div>
+        </div>
+    </div>
+</div>

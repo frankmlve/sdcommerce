@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sdcommerce"
+    }
+  },
+  "defaultProject": "sdcommerce",
+  "cli": {
+    "analytics": "b6062c61-9489-4fbc-acaf-3fc5d0def98f"
+  }
 }
